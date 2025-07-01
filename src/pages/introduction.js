@@ -7,21 +7,21 @@ const instructors = [
     name: "YongJu, Lee",
     title: "Master Instructor Trainer",
     image: "/instructor1.jpg",
-    desc: "심해 다이빙과 수중 사진 전문 강사입니다. 다이빙 업계에서 20년 이상의 경험을 보유하고 있습니다.",
+    desc: "오픈워터부터 강사 트레이너 과정까지 전 교육 이수 및 자격 보유. 강사 시험 평가 진행하며, 전국 각지에서 강사 양성과 교육 활동 중.",
   },
   {
     id: 2,
     name: "JungMin, Park",
     title: "Master Instructor Trainer",
     image: "/license_jm.jpg",
-    desc: "초보자 교육과 자유 다이빙을 전문으로 하며, 체계적인 이론 수업에 강점을 가지고 있습니다.",
+    desc: "오픈워터부터 강사 훈련까지 교육 가능하며, 다이버 레스큐와 CPR 등 안전 교육을 포함한 맞춤형 피드백으로 실력과 자신감 향상에 집중.",
   },
   {
     id: 3,
     name: "MyoungGyu, Park",
     title: "Master Instructor Trainer",
     image: "/license_mg.jpg",
-    desc: "다이빙 응급 구조 및 해양 안전 교육을 전문으로 하며, 실제 구조 경험도 풍부합니다.",
+    desc: "오픈워터부터 강사 훈련까지 교육 가능. 안전한 다이빙 기술과 맞춤형 교육으로 학습 효과를 높이며, 학생들의 성장을 열정적으로 지원.",
   },
 ];
 
