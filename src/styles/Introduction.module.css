@@ -1,0 +1,152 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.hero img {
+  border-radius: 32px;
+  animation: fadeZoom 0.8s ease forwards;
+  opacity: 0;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.introText {
+  text-align: center;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtext {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.gridSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 데스크탑: 2개 고정 */
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gridItem {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gridItem:hover {
+  transform: translateY(-4px) scale(1);
+}
+
+.gridItem h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.gridItem p,
+.gridItem ul {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.gridItem ul {
+  padding-left: 1.2rem;
+}
+
+.instructorSection {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #e4f7fd;
+  padding: 1.5rem;
+  border-radius: 16px;
+  max-width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1);
+}
+
+.profile {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+
+  /* 프로필 이미지도 애니메이션 */
+  animation: fadeZoom 0.8s ease forwards;
+  opacity: 0;
+}
+
+.card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.desc {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
