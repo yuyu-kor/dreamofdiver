@@ -11,7 +11,7 @@
   position: relative;
   height: 520px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url("/banner.jpeg") center/cover no-repeat;
+    url("/img_banner.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,13 +52,13 @@
   border-radius: 20px;
   padding: 2rem 1.5rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 320px;
   width: 100%;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px) scale(1.01);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
 }
 

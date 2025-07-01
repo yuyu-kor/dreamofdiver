@@ -52,7 +52,7 @@
 }
 
 .gridItem:hover {
-  transform: translateY(-4px) scale(1);
+  transform: translateY(-8px) scale(1.01);
 }
 
 .gridItem h3 {
@@ -97,18 +97,14 @@
 }
 
 .card:hover {
-  transform: translateY(-4px) scale(1);
+  transform: translateY(-8px) scale(1.01);
 }
 
 .profile {
-  border-radius: 50%;
-  width: 100px;
+  border-radius: 10%;
+  width: 200px;
   height: 100px;
   object-fit: cover;
-
-  /* 프로필 이미지도 애니메이션 */
-  animation: fadeZoom 0.8s ease forwards;
-  opacity: 0;
 }
 
 .card h4 {

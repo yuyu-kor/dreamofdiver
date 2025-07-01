@@ -1,0 +1,237 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0 12px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #555;
+  text-align: center;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+/* 링크 스타일 제거 + 카드처럼 보이게 */
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardImage {
+  border-bottom: 1px solid #eee;
+  object-fit: cover;
+}
+
+.cardBody {
+  padding: 20px;
+}
+
+.cardBody h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.cardBody p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.cardBody ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* 상세페이지용 */
+.detailSection {
+  margin-top: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.detailList {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  color: #444;
+  margin-top: 20px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.tourSection {
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* 뱃지 */
+
+.imageWrapper {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #ff4d4f;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* 모달 */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalContent {
+  background: rgba(255, 255, 255, 0.85); /* ✅ 더 밝게 (0.6 → 0.75) */
+  backdrop-filter: blur(16px); /* ✅ 부드러운 유리 효과 */
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 32px 28px;
+  max-width: 560px;
+  width: 90%;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+  text-align: center;
+  color: #111; /* ✅ 더 진하게 (가독성 향상) */
+}
+
+.modalImageWrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.modalTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.modalShort {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.modalDescription {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.infoBox {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.infoBox div {
+  text-align: center;
+}
+
+.infoLabel {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.inquiryButton {
+  background-color: #0070f3;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.inquiryButton:hover {
+  background-color: #005dc1;
+}
+
+.closeButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

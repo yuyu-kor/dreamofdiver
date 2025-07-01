@@ -4,23 +4,23 @@ import Image from "next/image";
 const instructors = [
   {
     id: 1,
-    name: "홍길동",
-    title: "마스터 다이버 & 강사",
+    name: "YongJu, Lee",
+    title: "Master Instructor Trainer",
     image: "/instructor1.jpg",
     desc: "심해 다이빙과 수중 사진 전문 강사입니다. 다이빙 업계에서 20년 이상의 경험을 보유하고 있습니다.",
   },
   {
     id: 2,
-    name: "김해심",
-    title: "스쿠버 교육 전문 강사",
-    image: "/instructor2.jpg",
+    name: "JungMin, Park",
+    title: "Master Instructor Trainer",
+    image: "/license_jm.jpg",
     desc: "초보자 교육과 자유 다이빙을 전문으로 하며, 체계적인 이론 수업에 강점을 가지고 있습니다.",
   },
   {
     id: 3,
-    name: "이수연",
-    title: "해양 구조 전문가",
-    image: "/instructor3.jpg",
+    name: "MyoungGyu, Park",
+    title: "Master Instructor Trainer",
+    image: "/license_mg.jpg",
     desc: "다이빙 응급 구조 및 해양 안전 교육을 전문으로 하며, 실제 구조 경험도 풍부합니다.",
   },
 ];
@@ -31,9 +31,9 @@ export default function Introduction() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <Image
-          src="/banner.jpeg"
+          src="/img_banner.jpg"
           alt="Diving Banner"
-          width={1200}
+          width={850}
           height={400}
           className={styles.bannerImage}
         />

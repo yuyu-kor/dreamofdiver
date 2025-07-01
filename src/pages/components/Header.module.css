@@ -1,16 +1,17 @@
 .header {
-  width: full;
-  height: 64px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .nav {
@@ -18,13 +19,21 @@
   gap: 32px;
 }
 
-.nav a {
-  font-size: 16px;
+/* 공통 링크 스타일 */
+.navLink {
+  font-size: 18px;
   color: #000;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
-.nav a:hover {
+/* hover 효과 */
+.navLink:hover {
+  color: #0070f3;
+}
+
+/* 현재 경로와 일치할 경우 유지되는 스타일 */
+.active {
   color: #0070f3;
 }
