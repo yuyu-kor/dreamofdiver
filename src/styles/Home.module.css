@@ -9,7 +9,9 @@
 /* Hero Section */
 .hero {
   position: relative;
-  height: 520px;
+  height: 600px; /* 기존보다 키움 */
+  margin-top: -72px; /* 헤더 높이만큼 위로 올려서 겹치게 */
+  padding-top: 72px; /* 내부 컨텐츠는 다시 아래로 내림 */
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
     url("/img_banner.jpg") center/cover no-repeat;
   display: flex;
@@ -17,6 +19,7 @@
   justify-content: center;
   color: #fff;
   text-align: center;
+  z-index: 0;
 }
 
 .overlay {

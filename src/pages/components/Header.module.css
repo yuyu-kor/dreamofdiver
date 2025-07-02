@@ -1,39 +1,82 @@
+/* Header.module.css */
+
 .header {
-  height: 70px;
+  height: 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  padding: 0 20px;
-  overflow: hidden;
+  padding: 0 32px;
+  background: rgba(255, 255, 255, 0.8); /* 반투명 배경 */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "NanumSquareNeo", sans-serif;
 }
 
+/* 로고 */
 .logo {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  gap: 12px;
+}
+
+/* 네비게이션 영역 */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .nav {
   display: flex;
-  gap: 32px;
+  gap: 28px;
 }
 
-/* 공통 링크 스타일 */
 .navLink {
-  font-size: 18px;
-  color: #000;
-  text-decoration: none;
+  font-size: 17px;
   font-weight: 500;
-  transition: color 0.2s ease;
+  color: #333;
+  text-decoration: none;
+  padding: 6px 4px;
+  transition: all 0.2s ease;
 }
 
-/* hover 효과 */
 .navLink:hover {
   color: #0070f3;
+  transform: translateY(-1px);
 }
 
-/* 현재 경로와 일치할 경우 유지되는 스타일 */
 .active {
   color: #0070f3;
+  font-weight: 600;
+}
+
+/* 로그인/회원가입 */
+.authButtons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 20px;
+}
+
+.authLink {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.authLink:hover {
+  color: #0070f3;
+  transform: translateY(-1px);
+}
+
+.separator {
+  font-size: 16px;
+  color: #ccc;
+  user-select: none;
 }

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router"; // 추가
+import { useRouter } from "next/router";
 import styles from "./Header.module.css";
 
 export default function Header() {
-  const router = useRouter(); // 현재 경로
+  const router = useRouter();
 
   const navItems = [
     { href: "/", label: "홈" },
@@ -28,19 +28,31 @@ export default function Header() {
         </Link>
       </div>
 
-      <nav className={styles.nav}>
-        {navItems.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className={`${styles.navLink} ${
-              router.pathname === item.href ? styles.active : ""
-            }`}
-          >
-            {item.label}
+      <div className={styles.rightSection}>
+        <nav className={styles.nav}>
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`${styles.navLink} ${
+                router.pathname === item.href ? styles.active : ""
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className={styles.authButtons}>
+          <Link href="/login" className={styles.authLink}>
+            로그인
           </Link>
-        ))}
-      </nav>
+          <span className={styles.separator}>|</span>
+          <Link href="/register" className={styles.authLink}>
+            회원가입
+          </Link>
+        </div>
+      </div>
     </header>
   );
 }
