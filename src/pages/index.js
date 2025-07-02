@@ -43,9 +43,13 @@ export default function Home() {
             열정적인 다이버 커뮤니티에 함께하세요. <br />
             지금 가입하고 새로운 수중 세계를 경험해보세요!
           </p>
-          <Link href="/register">
-            <button className={styles.registerButton}>지금 가입하기</button>
-          </Link>
+          <a
+            href="https://www.band.us/band/76027355"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className={styles.registerButton}>밴드 가입하기</button>
+          </a>
         </div>
       </section>
     </main>

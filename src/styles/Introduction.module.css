@@ -146,3 +146,48 @@
     transform: scale(1);
   }
 }
+
+.instructorNote {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* psa section */
+.psaSection {
+  padding: 4rem 2rem;
+}
+
+.psaContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.psaImage {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.psaText {
+  max-width: 480px;
+}
+
+.psaText h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.psaText p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}

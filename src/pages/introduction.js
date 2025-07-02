@@ -5,8 +5,8 @@ const instructors = [
   {
     id: 1,
     name: "YongJu, Lee",
-    title: "Master Instructor Trainer",
-    image: "/instructor1.jpg",
+    title: "Master Instructor Trainer Examiner",
+    image: "/license_yj.jpg",
     desc: "오픈워터부터 강사 트레이너 과정까지 전 교육 이수 및 자격 보유. 강사 시험 평가 진행하며, 전국 각지에서 강사 양성과 교육 활동 중.",
   },
   {
@@ -55,7 +55,7 @@ export default function Introduction() {
       {/* Mission, Vision, History, Values */}
       <section className={styles.gridSection}>
         <div className={styles.gridItem}>
-          <h3>Our Mission</h3>
+          <h3>DOD의 미션</h3>
           <p>
             해양 보전과 교육에 헌신하는 열정적인 다이버들의 커뮤니티를 육성하고,
             수중 세계의 경이로움을 탐험하며 다이빙 기술을 향상시키는 것을 목표로
@@ -64,7 +64,7 @@ export default function Introduction() {
         </div>
 
         <div className={styles.gridItem}>
-          <h3>Our Vision</h3>
+          <h3>DOD의 비전</h3>
           <p>
             안전과 환경 보호에 앞장서며, 해양 보전을 실천하는 우수한 다이버를
             양성하는 선도적인 스쿠버 다이빙 클럽으로 인정받는 것이 우리의
@@ -73,7 +73,7 @@ export default function Introduction() {
         </div>
 
         <div className={styles.gridItem}>
-          <h3>Our History</h3>
+          <h3>DOD의 연혁</h3>
           <p>
             2005년에 설립된 DOD 스쿠버 다이빙 클럽은 소수의 열정적인 다이버들로
             시작해, 현재는 활기찬 다이빙 커뮤니티로 성장했습니다. 저희의 여정은
@@ -82,13 +82,38 @@ export default function Introduction() {
         </div>
 
         <div className={styles.gridItem}>
-          <h3>Core Values</h3>
+          <h3>DOD의 핵심 가치</h3>
           <ul>
             <li>안전을 최우선으로</li>
             <li>환경에 대한 책임감</li>
             <li>배움과 커뮤니티 중심</li>
             <li>모험과 탐험의 정신</li>
           </ul>
+        </div>
+      </section>
+
+      {/* PSA 소개 섹션 - 미션/비전 아래, 강사진 위 */}
+      <section className={styles.psaSection}>
+        <div className={styles.psaContent}>
+          <div className={styles.psaImageWrapper}>
+            <Image
+              src="/img_psa.jpg" // public 폴더에 옮겼다면 파일명만 써도 됨
+              alt="PSA International"
+              width={400}
+              height={300}
+              className={styles.psaImage}
+            />
+          </div>
+          <div className={styles.psaText}>
+            <h3>PSA International이란?</h3>
+            <p>
+              PSAI(Professional Scuba Association International)는 1962년에
+              설립된 국제 스쿠버 다이빙 교육 기관으로, 전 세계적으로 공인된
+              다이빙 인증과 교육 커리큘럼을 제공합니다. DOD는 PSAI의 교육 기준에
+              따라 강사 및 다이버를 양성하며, 국제적으로 통용되는 자격을
+              부여받을 수 있는 정식 인증 센터입니다.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -101,8 +126,8 @@ export default function Introduction() {
               <Image
                 src={inst.image}
                 alt={`${inst.name} 프로필`}
-                width={120}
-                height={120}
+                width={300}
+                height={300}
                 className={styles.profile}
               />
               <h4>{inst.name}</h4>
@@ -111,6 +136,13 @@ export default function Introduction() {
             </div>
           ))}
         </div>
+
+        <p className={styles.instructorNote}>
+          이 외에도 다양한 분야의 경력과 전문성을 갖춘 다수의 강사진이 함께하고
+          있습니다.
+          <br />
+          안전하고 체계적인 교육을 위해 최선을 다하고 있습니다.
+        </p>
       </section>
     </main>
   );

@@ -65,6 +65,7 @@ const courses = [
     duration: "조율 가능",
     price: "문의 주세요",
     thumbnail: "/img_turtle.jpg",
+    badge: "🔥 인기",
   },
   {
     id: "INS",

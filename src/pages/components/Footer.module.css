@@ -1,5 +1,5 @@
 .footer {
-  height: 130px;
+  height: 145px;
   padding: 0 32px;
   display: flex;
   justify-content: space-between;
@@ -11,33 +11,34 @@
 
 .contact h4,
 .social h4 {
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   font-size: 20px;
   font-weight: 600;
 }
 
 .contact p {
-  margin: 2px 0;
+  margin: 5px 0;
 }
 
 .social {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .icons {
   display: flex;
   gap: 16px;
-  margin-top: 4px;
 }
 
 .icon {
-  font-size: 20px;
-  cursor: pointer;
-  transition: color 0.3s ease;
+  color: inherit; /* 부모 색상 상속 */
+  text-decoration: none;
+  font-size: 22px;
+  margin-right: 7px;
+  transition: color 0.3s;
 }
 
 .icon:hover {
-  color: #0070f3;
+  color: #007bff; /* hover 시 색상 변경 (원하는 색으로 조정) */
 }

@@ -7,11 +7,11 @@ export default function Header() {
   const router = useRouter(); // 현재 경로
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/introduction", label: "Introduction" },
-    { href: "/education", label: "Education & Tour" },
-    { href: "/gallery", label: "Gallery" },
-    { href: "/equipment-market", label: "Equipment Market" },
+    { href: "/", label: "홈" },
+    { href: "/introduction", label: "소개" },
+    { href: "/education", label: "교육 및 투어" },
+    { href: "/gallery", label: "갤러리" },
+    { href: "/equipment-market", label: "장비 마켓" },
   ];
 
   return (
